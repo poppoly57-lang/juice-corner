@@ -1,0 +1,112 @@
+.final-cta {
+	padding: clamp(72px, 9vw, 108px) 20px;
+	background: #FFF8ED;
+	color: var(--dark);
+	text-align: center;
+}
+
+.final-cta-container {
+	width: min(760px, 100%);
+	margin: 0 auto;
+}
+
+.final-cta-label {
+	margin: 0 0 16px;
+	color: #F47B20;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.final-cta-title {
+	color: #24221F;
+	font-size: clamp(2rem, 4vw, 3.25rem);
+	font-weight: 750;
+	line-height: 1.08;
+	text-transform: uppercase;
+}
+
+.final-cta-text {
+	max-width: 560px;
+	margin: 18px auto 30px;
+	color: #24221F;
+	font-size: 1rem;
+	line-height: 1.65;
+}
+
+.final-cta-actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.final-cta-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 46px;
+	padding: 0.75rem 1.2rem;
+	border: 1px solid #F47B20;
+	border-radius: 18px;
+	background: #F47B20;
+	color: #FFFFFF;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	transition: background-color 180ms ease, color 180ms ease;
+}
+
+.final-cta-button:hover,
+.final-cta-button:focus-visible {
+	background: var(--lime);
+	color: var(--white);
+}
+
+.final-cta-link {
+	max-width: 100%;
+	padding-bottom: 3px;
+	border-bottom: 1px solid rgba(36, 34, 31, 0.4);
+	color: #24221F;
+	font-size: 0.84rem;
+	line-height: 1.4;
+	transition: border-color 180ms ease, color 180ms ease;
+}
+
+.final-cta-link:hover,
+.final-cta-link:focus-visible {
+	border-color: var(--lime);
+	color: var(--lime);
+}
+
+.final-cta-button:focus-visible,
+.final-cta-link:focus-visible {
+	outline: 2px solid var(--white);
+	outline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+	.final-cta {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	.final-cta-actions {
+		flex-direction: column;
+		gap: 18px;
+	}
+
+	.final-cta-button {
+		width: min(100%, 260px);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.final-cta-button,
+	.final-cta-link {
+		transition: none;
+	}
+}

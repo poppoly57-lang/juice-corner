@@ -1,0 +1,73 @@
+.brand-intro {
+	background: var(--cream);
+	color: var(--dark);
+	padding: clamp(76px, 10vw, 132px) 20px clamp(80px, 10vw, 124px);
+	text-align: center;
+}
+
+.brand-intro-content {
+	width: min(760px, 100%);
+	margin: 0 auto;
+}
+
+.brand-intro-label {
+	margin: 0 0 18px;
+	color: var(--orange);
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.brand-intro-title {
+	margin: 0;
+	color: var(--dark);
+	font-size: clamp(2rem, 4.5vw, 3.55rem);
+	font-weight: 750;
+	line-height: 1.05;
+	letter-spacing: -0.035em;
+	text-transform: uppercase;
+}
+
+.brand-intro-text {
+	max-width: 620px;
+	margin: 24px auto 0;
+	color: var(--text-soft);
+	font-size: clamp(1rem, 1.7vw, 1.14rem);
+	line-height: 1.7;
+}
+
+.brand-intro-highlight {
+	margin: 30px 0 0;
+	color: var(--orange);
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+	.brand-intro {
+		padding: 68px 18px 76px;
+	}
+
+	.brand-intro-label {
+		margin-bottom: 16px;
+		font-size: 0.68rem;
+	}
+
+	.brand-intro-title {
+		font-size: clamp(1.85rem, 9vw, 2.7rem);
+	}
+
+	.brand-intro-text {
+		margin-top: 20px;
+		line-height: 1.6;
+	}
+
+	.brand-intro-highlight {
+		margin-top: 24px;
+		font-size: 0.68rem;
+		line-height: 1.7;
+	}
+}

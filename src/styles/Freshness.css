@@ -1,0 +1,124 @@
+.freshness-section {
+	padding: clamp(72px, 9vw, 112px) 20px;
+	background: var(--cream);
+	color: var(--dark);
+}
+
+.freshness-container {
+	display: grid;
+	grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+	align-items: center;
+	gap: clamp(36px, 7vw, 96px);
+	width: min(1160px, 100%);
+	margin: 0 auto;
+}
+
+.freshness-image-wrap {
+	position: relative;
+	min-height: 420px;
+	overflow: hidden;
+	background: var(--muted);
+}
+
+.freshness-image-wrap::after {
+	position: absolute;
+	inset: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.65);
+	content: '';
+	pointer-events: none;
+}
+
+.freshness-image {
+	width: 100%;
+	height: 100%;
+	min-height: 420px;
+	object-fit: cover;
+}
+
+.freshness-content {
+	max-width: 570px;
+}
+
+.freshness-label {
+	margin: 0 0 16px;
+	color: var(--orange);
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.freshness-title {
+	max-width: 520px;
+	color: var(--dark);
+	font-size: clamp(2rem, 4vw, 3.3rem);
+	font-weight: 750;
+	line-height: 1.08;
+	text-transform: uppercase;
+}
+
+.freshness-description {
+	max-width: 540px;
+	margin: 20px 0 34px;
+	color: var(--text-soft);
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.freshness-points {
+	display: grid;
+	gap: 20px;
+}
+
+.freshness-point {
+	display: grid;
+	grid-template-columns: 10px minmax(0, 1fr);
+	gap: 14px;
+	align-items: start;
+}
+
+.freshness-point-marker {
+	display: block;
+	width: 8px;
+	height: 8px;
+	margin-top: 6px;
+	border-radius: 50%;
+	background: var(--lime);
+}
+
+.freshness-point-title {
+	margin: 0 0 4px;
+	color: var(--dark);
+	font-size: 0.92rem;
+	font-weight: 750;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.freshness-point-text {
+	max-width: 500px;
+	color: var(--text-soft);
+	font-size: 0.9rem;
+	line-height: 1.55;
+}
+
+@media (max-width: 760px) {
+	.freshness-section {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	.freshness-container {
+		grid-template-columns: 1fr;
+		gap: 34px;
+	}
+
+	.freshness-content {
+		max-width: none;
+	}
+
+	.freshness-image-wrap,
+	.freshness-image {
+		min-height: 300px;
+	}
+}

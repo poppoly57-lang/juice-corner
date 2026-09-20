@@ -1,0 +1,48 @@
+.shop-header {
+  padding: clamp(64px, 8vw, 96px) 20px 32px;
+  background: #FFF8ED;
+  color: #24221F;
+  text-align: center;
+}
+
+.shop-header-container {
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.shop-header-label {
+  margin: 0 0 18px;
+  color: #F47B20;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.shop-header-title {
+  margin: 0;
+  color: #24221F;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.shop-header-description {
+  max-width: 640px;
+  margin: 18px auto 0;
+  color: #24221F;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 560px) {
+  .shop-header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .shop-header-label {
+    letter-spacing: 0.12em;
+  }
+}
